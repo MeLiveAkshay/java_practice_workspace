@@ -1,31 +1,39 @@
 package objectClass;
 
 /**
- * The Employee class represents a simple model of an employee with basic details
- * like ID, name, and salary. It includes constructors, getters, and setters
- * for object creation and manipulation.
+ * The Employee class represents a model of an employee with basic attributes:
+ * - ID
+ * - Name
+ * - Salary
+ * 
+ * It includes:
+ * - Constructors (default and parameterized)
+ * - Getters and setters
+ * - An overridden hashCode() method for use in hash-based collections
  */
 public class Employee {
-    // Private member variables to store employee details
-    private int id;
-    private String name;
-    private float salary;
+
+    // Private fields to store employee details
+    private int id;           // Unique employee ID
+    private String name;      // Employee's full name
+    private float salary;     // Employee's salary
 
     /**
      * Default constructor.
      * Initializes an empty Employee object.
+     * Useful when setting fields later using setters.
      */
     public Employee() {
-        // No initialization logic here
+        // No specific initialization; fields remain with default values.
     }
 
     /**
      * Parameterized constructor.
-     * Allows creation of an Employee object with specified values.
+     * Initializes the Employee object with provided id, name, and salary.
      *
-     * @param id     the employee's ID
-     * @param name   the employee's name
-     * @param salary the employee's salary
+     * @param id     the employee ID
+     * @param name   the employee name
+     * @param salary the employee salary
      */
     public Employee(int id, String name, float salary) {
         this.id = id;
@@ -33,8 +41,10 @@ public class Employee {
         this.salary = salary;
     }
 
+    // ======== Getters and Setters ========
+
     /**
-     * Gets the employee ID.
+     * Returns the employee's ID.
      *
      * @return the ID of the employee
      */
@@ -43,16 +53,16 @@ public class Employee {
     }
 
     /**
-     * Sets the employee ID.
+     * Updates the employee's ID.
      *
-     * @param id the new ID of the employee
+     * @param id the new ID to be set
      */
     public void setId(int id) {
         this.id = id;
     }
 
     /**
-     * Gets the employee name.
+     * Returns the employee's name.
      *
      * @return the name of the employee
      */
@@ -61,16 +71,16 @@ public class Employee {
     }
 
     /**
-     * Sets the employee name.
+     * Updates the employee's name.
      *
-     * @param name the new name of the employee
+     * @param name the new name to be set
      */
     public void setName(String name) {
         this.name = name;
     }
 
     /**
-     * Gets the employee salary.
+     * Returns the employee's salary.
      *
      * @return the salary of the employee
      */
@@ -79,18 +89,32 @@ public class Employee {
     }
 
     /**
-     * Sets the employee salary.
+     * Updates the employee's salary.
      *
-     * @param salary the new salary of the employee
+     * @param salary the new salary to be set
      */
     public void setSalary(float salary) {
         this.salary = salary;
     }
 
+    // ======== hashCode() Method ========
 
+    /**
+     * Overrides the hashCode() method from the Object class.
+     *
+     * The hash code is used in hashing-based collections (like HashMap or HashSet)
+     * to determine the bucket location of an object.
+     *
+     * ✅ This implementation uses only the `id` field to generate the hash code.
+     * This assumes that `id` is unique for each employee (like an employee number).
+     *
+     * 📌 Important: If you override `equals()`, you must override `hashCode()` too,
+     * and ensure both use the same fields for comparison.
+     *
+     * @return an integer hash code based on the employee's ID
+     */
     @Override
-    public int hashCode()
-    {
-        return id ;
+    public int hashCode() {
+        return id;
     }
 }
