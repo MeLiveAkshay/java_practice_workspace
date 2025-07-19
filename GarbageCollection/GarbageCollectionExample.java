@@ -2,6 +2,7 @@ package GarbageCollection;
 
 
 public class GarbageCollectionExample {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Demo obj = new Demo();
         obj = null; // Eligible for GC
@@ -9,8 +10,4 @@ public class GarbageCollectionExample {
     }
 }
 
-class Demo {
-    protected void finalize() {
-        System.out.println("Garbage collected: Demo object is destroyed");
-    }
-}
+
