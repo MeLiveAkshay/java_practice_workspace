@@ -9,6 +9,9 @@ public class CopyConstructorDemo {
         this.id = id;
         this.name = name;
     }
+    public CopyConstructorDemo(){
+
+    }
 
     // Copy constructor
     public CopyConstructorDemo(CopyConstructorDemo other) {
