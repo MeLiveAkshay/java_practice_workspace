@@ -1,4 +1,4 @@
-package oops.absctraction;
+package corejava.oops.absctraction;
 
 public abstract class MyClass {
     

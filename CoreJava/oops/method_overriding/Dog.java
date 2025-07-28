@@ -1,4 +1,4 @@
-package oops.method_overriding;
+package corejava.oops.method_overriding;
 
 public class Dog extends Animal
 {

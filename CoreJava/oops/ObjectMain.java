@@ -1,4 +1,4 @@
-package oops;
+package corejava.oops;
 
 public class ObjectMain
 {

@@ -1,4 +1,4 @@
-package oops.Constructor;
+package corejava.oops.constructor;
 
 public class CopyConstructorDemo {
     int id;

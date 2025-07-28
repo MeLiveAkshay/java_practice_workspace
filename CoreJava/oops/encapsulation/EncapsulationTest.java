@@ -1,4 +1,4 @@
-package oops.encapsulation;
+package corejava.oops.encapsulation;
 
 public class EncapsulationTest {
     private int id;

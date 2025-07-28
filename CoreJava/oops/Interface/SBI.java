@@ -1,4 +1,4 @@
-package oops.Interface;
+package corejava.oops.Interface;
 
 interface Bank {
     float getInterestRate(); // abstract method
