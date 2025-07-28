@@ -1,4 +1,4 @@
-package corejava.collection.vector;
+package collection.vector;
 
 
 
