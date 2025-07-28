@@ -1,3 +1,5 @@
+package corejava.collection.linkedlist;
+
 
 
 public class LinkedListDemo {

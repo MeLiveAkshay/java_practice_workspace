@@ -1,3 +1,5 @@
+package corejava.collection.linkedlist;
+
 import java.util.Collections;
 import java.util.LinkedList;
 
