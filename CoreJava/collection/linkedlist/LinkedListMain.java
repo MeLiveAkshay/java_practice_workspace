@@ -11,6 +11,18 @@ public static void main(String[] args)
         demo.printLinkedList();
         demo.removeFirst();
         demo.printLinkedList();
-        
+        demo.removedLast();
+        demo.printLinkedList();
+        demo.addFirst("Neha");
+        demo.addFirst("Girlfriend");
+        demo.addLast("Kiran");
+        demo.addLast("Simarn");
+        demo.addFirst("Pooja");
+        demo.addFirst("Pooja");
+        demo.printLinkedList();
+       System.out.println("Size of the LinkedList : "+demo.getSize());
+        demo.addFirst("Prinkya");
+        demo.printLinkedList();
+        System.out.println("Size of the LinkedList : "+demo.getSize());
     }
 }

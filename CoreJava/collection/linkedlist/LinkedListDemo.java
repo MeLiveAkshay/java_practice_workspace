@@ -61,23 +61,58 @@ public class LinkedListDemo {
         // Implementation needed here, for now just leave it empty or add logic later
     }
 
-    public void removeLast()
+    public void removedLast()
     {
         if(head==null)
         {
-            System.out.println(" List is empty");
+            System.out.println("List is empty");
             return;
         }
-        
-        Node secondLast=head;
-        Node lastNode=head.next;
-
-
+        if(head.next==null)
+        {
+            head=null;
+            return;
+        }
+        Node secendLastNode=head;
+        Node lastNode=head;
         while(lastNode.next!=null)
         {
+            secendLastNode=lastNode;
             lastNode=lastNode.next;
-            secondLast=secondLast.next;
         }
+        secendLastNode.next=null;
+    }
+    public void removeDuplicates()
+    {
+        if(head==null || head.next==null)
+        {
+            System.out.println("List is empty or has only one node");
+            return;
+        }
+        Node currentNode=head;
+        while(currentNode.next!=null){
+            if(currentNode.data.equals(currentNode.next.data)){
+                currentNode.next=currentNode.next.next;
+            }
+            else{
+                currentNode=currentNode.next;
+            }
+            // Implementation needed here, for now just leave it empty or add logic later
+        }
+        System.out.println("Duplicates removed successfully");
+        // Implementation needed here, for now just leave it empty or add logic later
+    }
+
+    public int getSize()
+    {
+        int size=0;
+        Node currentNode=head;
+        while(currentNode!=null)
+        {
+            size++;
+            currentNode=currentNode.next;
+        }
+        return size;
     }
 
 }
