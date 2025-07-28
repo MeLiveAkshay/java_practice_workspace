@@ -1,0 +1,73 @@
+Here are some assignments on **Java Collections** that you can give to your students:
+
+### Assignment 1: List Operations
+Create a Java program that performs the following operations on a `List` of integers:
+- Add elements to the list.
+- Remove an element from a specified position.
+- Search for an element in the list and return its position.
+- Sort the list in ascending and descending order.
+
+### Assignment 2: Word Frequency Counter
+Write a Java program that reads a paragraph of text and uses a `Map` (e.g., `HashMap`) to count the frequency of each word. The program should print out each word and its frequency.
+
+### Assignment 3: Unique Elements in a Set
+Write a Java program that uses a `Set` (e.g., `HashSet`) to store a collection of integers. The program should then take a list of integers from the user and add them to the set, ensuring no duplicates are added. Finally, print the unique elements in the set.
+
+### Assignment 4: Employee Management System
+Design a simple employee management system using a `Map` where the employee ID is the key, and the employee's name and department are the values. The program should allow users to:
+- Add a new employee.
+- Update an employee's information.
+- Remove an employee.
+- Display all employees.
+
+### Assignment 5: Sorting Students by Marks
+Create a class `Student` with properties like `name` and `marks`. Write a Java program that stores a list of `Student` objects in an `ArrayList`. Sort the list based on student marks in ascending order and display the sorted list.
+
+### Assignment 6: Stack Implementation
+Implement a basic stack using a `List` (e.g., `ArrayList`). Write methods to `push`, `pop`, and `peek` elements from the stack. Demonstrate the stack's behavior with some sample operations.
+
+### Assignment 7: Queue Simulation
+Write a Java program to simulate a queue of customers at a bank using a `LinkedList`. The program should allow customers to join the queue, be served in the order they arrived, and leave the queue once served.
+
+### Assignment 8: Removing Duplicates from a List
+Write a Java program that takes a list of integers from the user and removes any duplicates. Use a `Set` to help identify and remove duplicate elements, and then print the updated list.
+
+### Assignment 9: Merging Two Lists
+Write a Java program that merges two lists of integers into a single list. Ensure that the final list contains all the elements from both lists without duplicates. Use appropriate collection interfaces to achieve this.
+
+### Assignment 10: Frequency of Characters in a String
+Write a Java program that takes a string input from the user and uses a `Map` to count the frequency of each character in the string. Display the character frequencies.
+
+These assignments will help your students gain practical experience with Java Collections, such as `List`, `Set`, `Map`, and their implementations.
+
+
+
+### Assignment 11: Implement a mini library management system using collections.
+
+Task:
+
+Create a Book class with attributes title, author, ISBN, and isAvailable.
+Create a Library class that uses a List to manage a collection of books.
+Implement methods to addBook(Book book), removeBook(String ISBN), searchBook(String title), and lendBook(String ISBN).
+In the main method, create a Library object and perform various operations like adding, removing, searching, and lending books.
+
+
+### Assignment 12 : Create Phone book having user interface like
+
+	1. Add new phone book entry
+	2. Search Phone Number
+	3. Quit.
+
+Option 1 : it allows add name and Phone no.
+Option 2 : it has to take name as input from the user based on that it should return phone No
+Option 3: will terminate the program
+
+Use HashMap to store phone book entries.
+
+
+### Assignment 13 : Create a data structure to manage this using Java Collections.
+Write code to:
+Add students to a course.
+Display all students enrolled in a specific course.
+Remove a student from a course.
+List all courses a student is enrolled in.

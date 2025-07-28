@@ -1,0 +1,44 @@
+1. Store and Display Student Names. Use ArrayList<String> to store names.
+Sort the names alphabetically and display them.(Don't use TreeSet)
+
+2. Remove Duplicates from a List. Accept a list of integers from the user.
+Use HashSet to remove duplicates and display the unique values.
+
+3. Check if a List is Palindrome : Take a list of characters or integers.
+Check if the list reads the same forward and backward.
+
+4. Frequency of Words : Input: "Java is easy and Java is powerful". 
+Use HashMap<String, Integer> to count the frequency of each word.
+
+5. Sort Employees by Salary : Create an Employee class (id, name, salary).
+Store employees in a List<Employee>. Sort them by salary using Comparator.
+
+6. Custom Sorting using TreeSet : Add custom objects like Book (title, price) in TreeSet.
+Sort based on title or price. 
+
+7. Create a Mini Contact Book : Use HashMap<String, String> (name → contact number).
+Allow operations: add, update, delete, search.
+
+8. Find Duplicate Elements in a List : Given a list of strings/numbers, print all duplicates.
+
+9. Create a LinkedHashMap<String, Integer> to store product and price. Iterate and print in the order of insertion.
+
+10. Group Students by Department : Create Student class with (name, dept, marks).
+Use Map<String, List<Student>> to group by department.
+
+11. Top Scorer in Each Subject : Data: List of Student objects with marks in multiple subjects.
+Use nested maps: Map<String, Student> where key = subject.
+
+12. Most Frequent Character in a String : Use Map<Character, Integer> to find the character with the highest count.
+
+13. Sort a Map by Values : Input: Map<String, Integer> (Product, Price)
+Sort by price in descending order.
+
+14. Library Management System : 
+Use Map<String, List<Book>> where key = genre/category.
+Book has: title, author, price.
+Allow search by genre, and sorting within genre.
+
+15. Airline Ticket Booking : 
+Store flight number → List of Passenger objects
+Allow operations like book, cancel, search.

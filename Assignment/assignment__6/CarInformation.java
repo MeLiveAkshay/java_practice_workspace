@@ -1,5 +1,7 @@
 package assignment.assignment__6;
 
+import java.util.Scanner;
+
 public class CarInformation {
     private String company;
     private String model;
