@@ -24,5 +24,10 @@ public static void main(String[] args)
         demo.addFirst("Prinkya");
         demo.printLinkedList();
         System.out.println("Size of the LinkedList : "+demo.getSize());
+        demo.reverseLinkedList();
+        demo.printLinkedList();
+        System.out.println("Size of the LinkedList : "+demo.getSize());
+        demo.reverseLinkedList();
+        demo.printLinkedList();
     }
 }

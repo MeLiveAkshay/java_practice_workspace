@@ -115,4 +115,28 @@ public class LinkedListDemo {
         return size;
     }
 
+    public void reverseLinkedList()
+    {
+        if(head==null || head.next==null)
+        {
+            System.out.println("List is empty or has only one node");
+            return;
+        }
+
+        Node prev=head;
+        Node current=head.next;
+       
+        while(current!=null){
+           Node  nextNode=current.next;
+           current.next=prev;  // Reverse the link
+           //update the previous and current pointers
+           prev=current;
+           current=nextNode;
+        }
+        head.next=null;  // Make the last node as null to break the link
+        head=prev;  // Update the head pointer to the new head of the reversed list
+        System.out.println("Reversed linked list is: ");
+        
+    }
+
 }
