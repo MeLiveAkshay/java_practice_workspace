@@ -18,8 +18,5 @@ public class MyRunnableThread implements Runnable{
         }
     }
 
-    public void join() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'join'");
-    }
+    
 }
