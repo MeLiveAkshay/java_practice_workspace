@@ -1,4 +1,4 @@
-package corejava.oops;
+package oops;
 
 
 public class ClassName

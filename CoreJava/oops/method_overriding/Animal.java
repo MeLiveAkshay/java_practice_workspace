@@ -1,4 +1,4 @@
-package corejava.oops.method_overriding;
+package oops.method_overriding;
 
 public class Animal
 {
