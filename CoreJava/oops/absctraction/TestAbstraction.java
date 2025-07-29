@@ -1,4 +1,4 @@
-package corejava.oops.absctraction;
+package oops.absctraction;
 
 public class TestAbstraction extends MyClass {
 

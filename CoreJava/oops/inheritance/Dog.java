@@ -1,4 +1,4 @@
-package corejava.oops.inheritance;
+package oops.inheritance;
 
 public class Dog extends Animal{
     int x=4;

@@ -43,6 +43,37 @@ public class HashSetExample
             System.out.println(iterator2.next()+" ");
         }
 
+
+        HashSet <Product> hashSet3=new HashSet<>();
+        hashSet3.add(new Product(12, "Mobile", 153820, "Electronic"));
+        hashSet3.add(new Product(12, "Mobile", 153820, "Electronic"));
+        hashSet3.add(new Product(13, "Laptop", 75820, "Electronic"));
+        hashSet3.add(new Product(14, "Refrigerator", 35820, "Appliance"));
+        hashSet3.add(new Product(15, "Washing Machine", 25820, "Appliance"));
+        hashSet3.add(new Product(16, "TV", 55820, "Electronic"));
+        hashSet3.add(new Product(19, "Book", 150, "stationary"));
+        hashSet3.add(new Product(13, "Laptop", 75820, "Electronic"));
+        hashSet3.add(new Product(14, "Refrigerator", 35820, "Appliance"));
+        hashSet3.add(new Product(15, "Washing Machine", 25820, "Appliance"));
+
+        Product product=new Product(15, "Washing Machine", 25820, "Appliance");
+        hashSet3.add(product);
+
+        Product product2=new Product(15, "Washing Machine", 25820, "Appliance");
+        hashSet3.add(product2);
+
+
+        System.out.println("hashcode value of the project : "+product.hashCode());
+        System.out.println("hashcode value of the project2 : "+product2.hashCode());
+        System.out.println("project equal project2 : "+product.equals(product2));
+
+
+        System.out.println("Product Element : ");
+        Iterator<Product> iterator3=hashSet3.iterator();
+        while (iterator3.hasNext()) {
+            System.out.println(iterator3.next()+" ");
+            
+        }
     }
     
 }

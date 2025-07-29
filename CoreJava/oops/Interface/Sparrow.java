@@ -1,4 +1,4 @@
-package corejava.oops.Interface;
+package oops.Interface;
 
 // Interface: defines a contract
 interface Flyable {

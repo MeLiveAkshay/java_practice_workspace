@@ -1,4 +1,4 @@
-package corejava.oops.inheritance;
+package oops.inheritance;
 
 class Animal 
 {

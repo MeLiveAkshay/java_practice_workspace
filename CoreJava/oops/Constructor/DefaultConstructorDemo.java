@@ -1,4 +1,4 @@
-package corejava.oops.constructor;
+package oops.constructor;
 
 public class DefaultConstructorDemo
 {
