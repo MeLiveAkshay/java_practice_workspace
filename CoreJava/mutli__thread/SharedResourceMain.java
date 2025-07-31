@@ -14,6 +14,16 @@ public class SharedResourceMain {
 
         setterThread.start();
         getterThread.start();
+
+        try{
+            setterThread.join();
+            getterThread.join();
+        }
+        catch(InterruptedException exception){
+            exception.printStackTrace();
+        }
+
+        System.out.println("End of The Application");
     }
 
 }
