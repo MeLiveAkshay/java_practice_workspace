@@ -45,6 +45,7 @@ public class AirlineBookingSystem {
         }
     }
 
+    @SuppressWarnings("unused")
     private static void bookTicket() {
         System.out.print("Enter Flight Number: ");
         String flight = sc.nextLine();
