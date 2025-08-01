@@ -1,0 +1,18 @@
+1. Write a multithreaded program that will accept 4 strings from the command line
+and search in a particular file for a given string and display the status of each search on the screen.
+
+Note that, all threads are operating on the same file.
+
+2. Write a Java application that will accept two filenames (text files) as command line 
+arguments and use two threads to read contents from the two text files. Each of the threads should sleep for a random time after displaying filename with each line. 
+
+3.Write a java application that will create and start two threads. 
+One thread will read a text file (Number.txt) containing five positive integers one on each line. 
+The second thread should calculate factorial of the number read by the first thread and print the message on the screen as “Factorial of x is y” ,here x is number & y is factorial of the number
+The two threads should work in synchronization. Handle all necessary exceptions.      
+
+4. Write a Java program to print numbers 1 to 100 using two threads — one prints odd, one prints even. (Use wait(), notify())
+
+5. Three threads print A, B, and C respectively in order like: ABCABCABC... (Use wait(), notify())
+
+6. Check Race condition demo with unsynchronized counter.
