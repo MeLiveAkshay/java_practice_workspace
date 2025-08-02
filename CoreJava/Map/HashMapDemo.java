@@ -1,4 +1,4 @@
-package Map;
+package map;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -14,6 +14,7 @@ public class HashMapDemo {
         hashMap.put(3,"Ranchi");
         System.out.println("Element : "+hashMap);
         hashMap.put(4, "Pune");
+
         System.out.println("Element : "+hashMap);
 
 
@@ -44,7 +45,7 @@ public class HashMapDemo {
         hashMap2.put("hello", 95.3);
         hashMap2.put("hello", 15.3);
         hashMap2.put("hello", 15.3);
-
+        hashMap2.put("sandeep", null);
 
         System.out.println(hashMap2);
 
