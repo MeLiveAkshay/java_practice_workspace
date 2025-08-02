@@ -1,0 +1,108 @@
+Here are **10 Java interview questions** focused on **`TreeMap`**, ranging from beginner to intermediate level. These are useful for both learning and interview preparation.
+
+---
+
+### ✅ **Java TreeMap – 10 Interview Questions**
+
+---
+
+#### 1. **What is a TreeMap in Java?**
+
+* `TreeMap` is a **Map** implementation based on a **Red-Black tree**.
+* It **stores keys in sorted (ascending) order**.
+* It is part of `java.util` package.
+
+---
+
+#### 2. **How does TreeMap maintain order?**
+
+* TreeMap sorts keys using:
+
+  * **Natural ordering** (via `Comparable`) — by default.
+  * Or a **custom `Comparator`** passed during instantiation.
+
+---
+
+#### 3. **Can TreeMap store null keys or null values?**
+
+* **Null keys**: ❌ Not allowed. `NullPointerException` is thrown.
+* **Null values**: ✅ Allowed.
+
+---
+
+#### 4. **How is TreeMap different from HashMap?**
+
+| Feature       | TreeMap        | HashMap                |
+| ------------- | -------------- | ---------------------- |
+| Order         | Sorted by key  | No order               |
+| Performance   | O(log n)       | O(1)                   |
+| Null key      | ❌ Not allowed  | ✅ One null key allowed |
+| Underlying DS | Red-Black Tree | Hash Table             |
+
+---
+
+#### 5. **How to iterate over a TreeMap?**
+
+```java
+TreeMap<Integer, String> map = new TreeMap<>();
+map.put(1, "A");
+map.put(2, "B");
+
+for (Map.Entry<Integer, String> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + " = " + entry.getValue());
+}
+```
+
+---
+
+#### 6. **How to create a TreeMap with custom sorting?**
+
+```java
+TreeMap<String, Integer> map = new TreeMap<>(Comparator.reverseOrder());
+```
+
+* Keys will be sorted in **reverse (descending)** order.
+
+---
+
+#### 7. **What are methods specific to TreeMap (not in Map)?**
+
+* `firstKey()`
+* `lastKey()`
+* `higherKey(K key)`
+* `lowerKey(K key)`
+* `subMap(fromKey, toKey)`
+* `headMap(toKey)`
+* `tailMap(fromKey)`
+
+---
+
+#### 8. **Is TreeMap synchronized?**
+
+* ❌ No, `TreeMap` is **not thread-safe**.
+* For thread safety, wrap it:
+
+```java
+Map<K, V> syncMap = Collections.synchronizedSortedMap(new TreeMap<>());
+```
+
+---
+
+#### 9. **What is the time complexity of TreeMap operations?**
+
+* `put()`, `get()`, `remove()` → **O(log n)** because it uses a **balanced binary tree**.
+
+---
+
+#### 10. **Can TreeMap sort based on values instead of keys?**
+
+* ❌ No, TreeMap **only sorts by keys**.
+* To sort by values, you need to:
+
+  * Extract entries.
+  * Sort using a comparator.
+  * Collect into a LinkedHashMap.
+
+
+
+
