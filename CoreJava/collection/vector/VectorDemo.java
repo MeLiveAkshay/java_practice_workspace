@@ -1,4 +1,4 @@
-package corejava.collection.vector;
+package collection.vector;
 
 import java.util.ArrayList;
 import java.util.Enumeration;
