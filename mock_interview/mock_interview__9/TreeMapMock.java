@@ -19,8 +19,13 @@ public class TreeMapMock {
 
         System.out.println("Original Map: " + map);
 
-        
-    }
+        Set<Integer> set=map.reversed().keySet();
+        System.out.println(set);
 
-    
+        Iterator <Integer> iterator=set.iterator();
+        while (iterator.hasNext()) {
+            Integer integer=iterator.next();
+            System.out.println(integer+" is : "+map.get(integer));
+        }
+    }
 }

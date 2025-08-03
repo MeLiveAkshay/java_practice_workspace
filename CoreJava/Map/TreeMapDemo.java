@@ -1,5 +1,6 @@
 package map;
 
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -46,6 +47,17 @@ public class TreeMapDemo {
         System.out.println("-------------Key----------------------");
         Set<ProductModel>models=tMap3.keySet();
         System.out.println("Key "+ models); //ClassCastException
+        System.out.println();
+
+        Iterator<ProductModel> iterator=models.iterator();
+        while (iterator.hasNext()) {
+            ProductModel model=iterator.next();
+            System.out.println(model+"  is : "+tMap3.get(model));
+        }
+       
+
+
+
 
     }
 }
