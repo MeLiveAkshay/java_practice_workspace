@@ -3,7 +3,6 @@ package mock_interview.mock_interview__9;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeMap;
-import java.util.Map;
 
 public class TreeMapMock {
     public static void main(String[] args) {

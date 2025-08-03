@@ -1,7 +1,7 @@
 package map;
 
 @SuppressWarnings("rawtypes")
-public class ProductModel  implements Comparable{
+public class ProductModel  implements Comparable<ProductModel>{
     private int id;
     private String name;
     private float price;
@@ -34,7 +34,7 @@ public class ProductModel  implements Comparable{
     public String toString() {
         return "ProductModel [id=" + id + ", name=" + name + ", price=" + price + "]";
     }
-    
+    /* 
     @Override
     public int compareTo(Object obj) {
         if (obj instanceof ProductModel){
@@ -49,17 +49,11 @@ public class ProductModel  implements Comparable{
         }
         return 0;
     }
-    
-
-
-    /* 
+        */
     @Override
     public int compareTo(ProductModel o) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+        return this.id-o.id;
     }
-        */
-
-    
+     
 
 }
